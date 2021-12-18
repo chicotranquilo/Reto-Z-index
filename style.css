@@ -1,0 +1,50 @@
+
+.layout{
+    display: flex;
+}
+
+
+.bg {
+    width: 400px;
+    height: 300px;
+    background-color: #293462;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.soap {
+    width: 200px;
+    height: 100px;
+    background-color: #fe5f55;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soap::after,
+.soap::before {
+    content: '';
+    background-color: #ac4942;
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+.soap::before {
+    width: 140px;
+    height: 40px;
+    /* margin-top: 30px; */
+    /* left: 30px; */
+}
+
+.soap::after {    
+    width: 200px;
+    height: 50px;
+    bottom: -16px;
+    z-index: -1;
+}
